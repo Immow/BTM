@@ -1,0 +1,2163 @@
+{
+	"name": "Myblueprint",
+	"compressionInfo": {
+		"chunkHeaderVersion": 572662306,
+		"packageFileTag": 2653586369,
+		"maxUncompressedChunkContentSize": 131072,
+		"compressionAlgorithm": 3
+	},
+	"header": {
+		"headerVersion": 2,
+		"saveVersion": 52,
+		"buildVersion": 463028,
+		"designerDimension": {
+			"x": 6,
+			"y": 6,
+			"z": 6
+		},
+		"recipeReferences": [
+			{
+				"levelName": "",
+				"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorBeltMk5.Recipe_ConveyorBeltMk5_C"
+			},
+			{
+				"levelName": "",
+				"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorPole.Recipe_ConveyorPole_C"
+			},
+			{
+				"levelName": "",
+				"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorBeltMk5.Recipe_ConveyorBeltMk5_C"
+			},
+			{
+				"levelName": "",
+				"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorBeltMk5.Recipe_ConveyorBeltMk5_C"
+			},
+			{
+				"levelName": "",
+				"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorBeltMk5.Recipe_ConveyorBeltMk5_C"
+			},
+			{
+				"levelName": "",
+				"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorBeltMk5.Recipe_ConveyorBeltMk5_C"
+			}
+		],
+		"itemCosts": [
+			[
+				{
+					"levelName": "",
+					"pathName": "/Game/FactoryGame/Resource/Parts/IronPlate/Desc_IronPlate.Desc_IronPlate_C"
+				},
+				14
+			],
+			[
+				{
+					"levelName": "",
+					"pathName": "/Game/FactoryGame/Resource/Parts/IronRod/Desc_IronRod.Desc_IronRod_C"
+				},
+				10
+			],
+			[
+				{
+					"levelName": "",
+					"pathName": "/Game/FactoryGame/Resource/Parts/Cement/Desc_Cement.Desc_Cement_C"
+				},
+				10
+			],
+			[
+				{
+					"levelName": "",
+					"pathName": "/Game/FactoryGame/Resource/Parts/IronPlateReinforced/Desc_IronPlateReinforced.Desc_IronPlateReinforced_C"
+				},
+				4
+			],
+			[
+				{
+					"levelName": "",
+					"pathName": "/Game/FactoryGame/Resource/Parts/SteelPlate/Desc_SteelPlate.Desc_SteelPlate_C"
+				},
+				4
+			],
+			[
+				{
+					"levelName": "",
+					"pathName": "/Game/FactoryGame/Resource/Parts/AluminumPlate/Desc_AluminumPlate.Desc_AluminumPlate_C"
+				},
+				4
+			],
+			[
+				{
+					"levelName": "",
+					"pathName": "/Game/FactoryGame/Resource/Parts/SteelPlateReinforced/Desc_SteelPlateReinforced.Desc_SteelPlateReinforced_C"
+				},
+				4
+			]
+		]
+	},
+	"config": {
+		"configVersion": 4,
+		"description": "",
+		"color": {
+			"r": 0.10702300071716309,
+			"g": 0.4341540038585663,
+			"b": 0.5583410263061523,
+			"a": 1
+		},
+		"iconID": 782,
+		"referencedIconLibrary": "/Game/FactoryGame/-Shared/Blueprint/IconLibrary",
+		"iconLibraryType": "IconLibrary",
+		"lastEditedBy": [
+			{
+				"accountId": "06BF125B0301001001",
+				"displayName": "Immow",
+				"platformName": "STEAM"
+			},
+			{
+				"accountId": "0103BE3784CDCACF44EB8BEDCDB60ED57CCC00021F8C1F974E88AE2D140D8799655C",
+				"displayName": "Immow_1",
+				"platformName": "Epic"
+			}
+		]
+	},
+	"objects": [
+		{
+			"typePath": "/Game/FactoryGame/Buildable/Factory/ConveyorBeltMk5/Build_ConveyorBeltMk5.Build_ConveyorBeltMk5_C",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145347889",
+			"flags": 8,
+			"properties": {
+				"mSplineData": {
+					"type": "StructArrayProperty",
+					"ueType": "ArrayProperty",
+					"name": "mSplineData",
+					"structValueFields": {
+						"allStructType": "SplinePointData"
+					},
+					"subtype": "StructProperty",
+					"values": [
+						{
+							"type": "StructProperty",
+							"ueType": "StructProperty",
+							"name": "",
+							"subtype": "SplinePointData",
+							"value": {
+								"type": "SplinePointData",
+								"properties": {
+									"Location": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "Location",
+										"value": {
+											"x": 0,
+											"y": 0,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"ArriveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "ArriveTangent",
+										"value": {
+											"x": -1.2246467991473535e-16,
+											"y": -1,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"LeaveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "LeaveTangent",
+										"value": {
+											"x": -4.8985871965894135e-14,
+											"y": -400,
+											"z": 0
+										},
+										"subtype": "Vector"
+									}
+								}
+							}
+						},
+						{
+							"type": "StructProperty",
+							"ueType": "StructProperty",
+							"name": "",
+							"subtype": "SplinePointData",
+							"value": {
+								"type": "SplinePointData",
+								"properties": {
+									"Location": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "Location",
+										"value": {
+											"x": 0,
+											"y": -800,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"ArriveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "ArriveTangent",
+										"value": {
+											"x": 0,
+											"y": -400,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"LeaveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "LeaveTangent",
+										"value": {
+											"x": 0,
+											"y": -1,
+											"z": 0
+										},
+										"subtype": "Vector"
+									}
+								}
+							}
+						}
+					]
+				},
+				"mCustomizationData": {
+					"type": "StructProperty",
+					"ueType": "StructProperty",
+					"name": "mCustomizationData",
+					"value": {
+						"type": "FactoryCustomizationData",
+						"properties": {
+							"SwatchDesc": {
+								"type": "ObjectProperty",
+								"ueType": "ObjectProperty",
+								"name": "SwatchDesc",
+								"value": {
+									"levelName": "",
+									"pathName": "/Game/FactoryGame/Buildable/-Shared/Customization/Swatches/SwatchDesc_Slot0.SwatchDesc_Slot0_C"
+								}
+							}
+						}
+					},
+					"subtype": "FactoryCustomizationData"
+				},
+				"mBuiltWithRecipe": {
+					"type": "ObjectProperty",
+					"ueType": "ObjectProperty",
+					"name": "mBuiltWithRecipe",
+					"value": {
+						"levelName": "",
+						"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorBeltMk5.Recipe_ConveyorBeltMk5_C"
+					}
+				}
+			},
+			"specialProperties": {
+				"type": "ConveyorSpecialProperties"
+			},
+			"trailingData": [],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "",
+			"type": "SaveEntity",
+			"needTransform": true,
+			"wasPlacedInLevel": false,
+			"parentObject": {
+				"levelName": "Persistent_Level",
+				"pathName": "Persistent_Level:PersistentLevel.BuildableSubsystem"
+			},
+			"transform": {
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": -0.7071067690849304,
+					"w": 0.7071067690849304
+				},
+				"translation": {
+					"x": 800,
+					"y": 500,
+					"z": 100
+				},
+				"scale3d": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"components": [
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145347889.ConveyorAny1"
+				},
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145347889.ConveyorAny0"
+				}
+			]
+		},
+		{
+			"typePath": "/Game/FactoryGame/Buildable/Factory/ConveyorPole/Build_ConveyorPole.Build_ConveyorPole_C",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145347886",
+			"flags": 8,
+			"properties": {
+				"mCustomizationData": {
+					"type": "StructProperty",
+					"ueType": "StructProperty",
+					"name": "mCustomizationData",
+					"value": {
+						"type": "FactoryCustomizationData",
+						"properties": {
+							"SwatchDesc": {
+								"type": "ObjectProperty",
+								"ueType": "ObjectProperty",
+								"name": "SwatchDesc",
+								"value": {
+									"levelName": "",
+									"pathName": "/Game/FactoryGame/Buildable/-Shared/Customization/Swatches/SwatchDesc_Slot0.SwatchDesc_Slot0_C"
+								}
+							}
+						}
+					},
+					"subtype": "FactoryCustomizationData"
+				},
+				"mBuiltWithRecipe": {
+					"type": "ObjectProperty",
+					"ueType": "ObjectProperty",
+					"name": "mBuiltWithRecipe",
+					"value": {
+						"levelName": "",
+						"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorPole.Recipe_ConveyorPole_C"
+					}
+				}
+			},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "",
+			"type": "SaveEntity",
+			"needTransform": true,
+			"wasPlacedInLevel": false,
+			"parentObject": {
+				"levelName": "Persistent_Level",
+				"pathName": "Persistent_Level:PersistentLevel.BuildableSubsystem"
+			},
+			"transform": {
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0,
+					"w": 1
+				},
+				"translation": {
+					"x": 800,
+					"y": 500,
+					"z": 0
+				},
+				"scale3d": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"components": [
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145347886.SnapOnly0"
+				}
+			]
+		},
+		{
+			"typePath": "/Game/FactoryGame/Buildable/Factory/ConveyorPole/Build_ConveyorPole.Build_ConveyorPole_C",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145347883",
+			"flags": 8,
+			"properties": {
+				"mCustomizationData": {
+					"type": "StructProperty",
+					"ueType": "StructProperty",
+					"name": "mCustomizationData",
+					"value": {
+						"type": "FactoryCustomizationData",
+						"properties": {
+							"SwatchDesc": {
+								"type": "ObjectProperty",
+								"ueType": "ObjectProperty",
+								"name": "SwatchDesc",
+								"value": {
+									"levelName": "",
+									"pathName": "/Game/FactoryGame/Buildable/-Shared/Customization/Swatches/SwatchDesc_Slot0.SwatchDesc_Slot0_C"
+								}
+							}
+						}
+					},
+					"subtype": "FactoryCustomizationData"
+				},
+				"mBuiltWithRecipe": {
+					"type": "ObjectProperty",
+					"ueType": "ObjectProperty",
+					"name": "mBuiltWithRecipe",
+					"value": {
+						"levelName": "",
+						"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorPole.Recipe_ConveyorPole_C"
+					}
+				}
+			},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "",
+			"type": "SaveEntity",
+			"needTransform": true,
+			"wasPlacedInLevel": false,
+			"parentObject": {
+				"levelName": "Persistent_Level",
+				"pathName": "Persistent_Level:PersistentLevel.BuildableSubsystem"
+			},
+			"transform": {
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": -1,
+					"w": 2.220446049250313e-16
+				},
+				"translation": {
+					"x": -1.1368683772161603e-13,
+					"y": 500,
+					"z": 0
+				},
+				"scale3d": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"components": [
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145347883.SnapOnly0"
+				}
+			]
+		},
+		{
+			"typePath": "/Game/FactoryGame/Buildable/Factory/ConveyorBeltMk5/Build_ConveyorBeltMk5.Build_ConveyorBeltMk5_C",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145345741",
+			"flags": 8,
+			"properties": {
+				"mSplineData": {
+					"type": "StructArrayProperty",
+					"ueType": "ArrayProperty",
+					"name": "mSplineData",
+					"structValueFields": {
+						"allStructType": "SplinePointData"
+					},
+					"subtype": "StructProperty",
+					"values": [
+						{
+							"type": "StructProperty",
+							"ueType": "StructProperty",
+							"name": "",
+							"subtype": "SplinePointData",
+							"value": {
+								"type": "SplinePointData",
+								"properties": {
+									"Location": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "Location",
+										"value": {
+											"x": 0,
+											"y": 0,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"ArriveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "ArriveTangent",
+										"value": {
+											"x": -1.2246467991473535e-16,
+											"y": -1,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"LeaveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "LeaveTangent",
+										"value": {
+											"x": -4.8985871965894135e-14,
+											"y": -400,
+											"z": 0
+										},
+										"subtype": "Vector"
+									}
+								}
+							}
+						},
+						{
+							"type": "StructProperty",
+							"ueType": "StructProperty",
+							"name": "",
+							"subtype": "SplinePointData",
+							"value": {
+								"type": "SplinePointData",
+								"properties": {
+									"Location": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "Location",
+										"value": {
+											"x": 0,
+											"y": -800,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"ArriveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "ArriveTangent",
+										"value": {
+											"x": 0,
+											"y": -400,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"LeaveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "LeaveTangent",
+										"value": {
+											"x": 0,
+											"y": -1,
+											"z": 0
+										},
+										"subtype": "Vector"
+									}
+								}
+							}
+						}
+					]
+				},
+				"mCustomizationData": {
+					"type": "StructProperty",
+					"ueType": "StructProperty",
+					"name": "mCustomizationData",
+					"value": {
+						"type": "FactoryCustomizationData",
+						"properties": {
+							"SwatchDesc": {
+								"type": "ObjectProperty",
+								"ueType": "ObjectProperty",
+								"name": "SwatchDesc",
+								"value": {
+									"levelName": "",
+									"pathName": "/Game/FactoryGame/Buildable/-Shared/Customization/Swatches/SwatchDesc_Slot0.SwatchDesc_Slot0_C"
+								}
+							}
+						}
+					},
+					"subtype": "FactoryCustomizationData"
+				},
+				"mBuiltWithRecipe": {
+					"type": "ObjectProperty",
+					"ueType": "ObjectProperty",
+					"name": "mBuiltWithRecipe",
+					"value": {
+						"levelName": "",
+						"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorBeltMk5.Recipe_ConveyorBeltMk5_C"
+					}
+				}
+			},
+			"specialProperties": {
+				"type": "ConveyorSpecialProperties"
+			},
+			"trailingData": [],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "",
+			"type": "SaveEntity",
+			"needTransform": true,
+			"wasPlacedInLevel": false,
+			"parentObject": {
+				"levelName": "Persistent_Level",
+				"pathName": "Persistent_Level:PersistentLevel.BuildableSubsystem"
+			},
+			"transform": {
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": -0.7071067690849304,
+					"w": 0.7071067690849304
+				},
+				"translation": {
+					"x": 800,
+					"y": 200,
+					"z": 100
+				},
+				"scale3d": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"components": [
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145345741.ConveyorAny1"
+				},
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145345741.ConveyorAny0"
+				}
+			]
+		},
+		{
+			"typePath": "/Game/FactoryGame/Buildable/Factory/ConveyorPole/Build_ConveyorPole.Build_ConveyorPole_C",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145345738",
+			"flags": 8,
+			"properties": {
+				"mCustomizationData": {
+					"type": "StructProperty",
+					"ueType": "StructProperty",
+					"name": "mCustomizationData",
+					"value": {
+						"type": "FactoryCustomizationData",
+						"properties": {
+							"SwatchDesc": {
+								"type": "ObjectProperty",
+								"ueType": "ObjectProperty",
+								"name": "SwatchDesc",
+								"value": {
+									"levelName": "",
+									"pathName": "/Game/FactoryGame/Buildable/-Shared/Customization/Swatches/SwatchDesc_Slot0.SwatchDesc_Slot0_C"
+								}
+							}
+						}
+					},
+					"subtype": "FactoryCustomizationData"
+				},
+				"mBuiltWithRecipe": {
+					"type": "ObjectProperty",
+					"ueType": "ObjectProperty",
+					"name": "mBuiltWithRecipe",
+					"value": {
+						"levelName": "",
+						"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorPole.Recipe_ConveyorPole_C"
+					}
+				}
+			},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "",
+			"type": "SaveEntity",
+			"needTransform": true,
+			"wasPlacedInLevel": false,
+			"parentObject": {
+				"levelName": "Persistent_Level",
+				"pathName": "Persistent_Level:PersistentLevel.BuildableSubsystem"
+			},
+			"transform": {
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0,
+					"w": 1
+				},
+				"translation": {
+					"x": 800,
+					"y": 200,
+					"z": 0
+				},
+				"scale3d": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"components": [
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145345738.SnapOnly0"
+				}
+			]
+		},
+		{
+			"typePath": "/Game/FactoryGame/Buildable/Factory/ConveyorPole/Build_ConveyorPole.Build_ConveyorPole_C",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145345735",
+			"flags": 8,
+			"properties": {
+				"mCustomizationData": {
+					"type": "StructProperty",
+					"ueType": "StructProperty",
+					"name": "mCustomizationData",
+					"value": {
+						"type": "FactoryCustomizationData",
+						"properties": {
+							"SwatchDesc": {
+								"type": "ObjectProperty",
+								"ueType": "ObjectProperty",
+								"name": "SwatchDesc",
+								"value": {
+									"levelName": "",
+									"pathName": "/Game/FactoryGame/Buildable/-Shared/Customization/Swatches/SwatchDesc_Slot0.SwatchDesc_Slot0_C"
+								}
+							}
+						}
+					},
+					"subtype": "FactoryCustomizationData"
+				},
+				"mBuiltWithRecipe": {
+					"type": "ObjectProperty",
+					"ueType": "ObjectProperty",
+					"name": "mBuiltWithRecipe",
+					"value": {
+						"levelName": "",
+						"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorPole.Recipe_ConveyorPole_C"
+					}
+				}
+			},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "",
+			"type": "SaveEntity",
+			"needTransform": true,
+			"wasPlacedInLevel": false,
+			"parentObject": {
+				"levelName": "Persistent_Level",
+				"pathName": "Persistent_Level:PersistentLevel.BuildableSubsystem"
+			},
+			"transform": {
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": -1,
+					"w": 2.220446049250313e-16
+				},
+				"translation": {
+					"x": -5.684341886080802e-14,
+					"y": 200,
+					"z": 0
+				},
+				"scale3d": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"components": [
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145345735.SnapOnly0"
+				}
+			]
+		},
+		{
+			"typePath": "/Game/FactoryGame/Buildable/Factory/ConveyorBeltMk5/Build_ConveyorBeltMk5.Build_ConveyorBeltMk5_C",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145343823",
+			"flags": 8,
+			"properties": {
+				"mSplineData": {
+					"type": "StructArrayProperty",
+					"ueType": "ArrayProperty",
+					"name": "mSplineData",
+					"structValueFields": {
+						"allStructType": "SplinePointData"
+					},
+					"subtype": "StructProperty",
+					"values": [
+						{
+							"type": "StructProperty",
+							"ueType": "StructProperty",
+							"name": "",
+							"subtype": "SplinePointData",
+							"value": {
+								"type": "SplinePointData",
+								"properties": {
+									"Location": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "Location",
+										"value": {
+											"x": 0,
+											"y": 0,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"ArriveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "ArriveTangent",
+										"value": {
+											"x": -1.2246467991473535e-16,
+											"y": -1,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"LeaveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "LeaveTangent",
+										"value": {
+											"x": -4.8985871965894135e-14,
+											"y": -400,
+											"z": 0
+										},
+										"subtype": "Vector"
+									}
+								}
+							}
+						},
+						{
+							"type": "StructProperty",
+							"ueType": "StructProperty",
+							"name": "",
+							"subtype": "SplinePointData",
+							"value": {
+								"type": "SplinePointData",
+								"properties": {
+									"Location": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "Location",
+										"value": {
+											"x": 0,
+											"y": -800,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"ArriveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "ArriveTangent",
+										"value": {
+											"x": 0,
+											"y": -400,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"LeaveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "LeaveTangent",
+										"value": {
+											"x": 0,
+											"y": -1,
+											"z": 0
+										},
+										"subtype": "Vector"
+									}
+								}
+							}
+						}
+					]
+				},
+				"mCustomizationData": {
+					"type": "StructProperty",
+					"ueType": "StructProperty",
+					"name": "mCustomizationData",
+					"value": {
+						"type": "FactoryCustomizationData",
+						"properties": {
+							"SwatchDesc": {
+								"type": "ObjectProperty",
+								"ueType": "ObjectProperty",
+								"name": "SwatchDesc",
+								"value": {
+									"levelName": "",
+									"pathName": "/Game/FactoryGame/Buildable/-Shared/Customization/Swatches/SwatchDesc_Slot0.SwatchDesc_Slot0_C"
+								}
+							}
+						}
+					},
+					"subtype": "FactoryCustomizationData"
+				},
+				"mBuiltWithRecipe": {
+					"type": "ObjectProperty",
+					"ueType": "ObjectProperty",
+					"name": "mBuiltWithRecipe",
+					"value": {
+						"levelName": "",
+						"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorBeltMk5.Recipe_ConveyorBeltMk5_C"
+					}
+				}
+			},
+			"specialProperties": {
+				"type": "ConveyorSpecialProperties"
+			},
+			"trailingData": [],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "",
+			"type": "SaveEntity",
+			"needTransform": true,
+			"wasPlacedInLevel": false,
+			"parentObject": {
+				"levelName": "Persistent_Level",
+				"pathName": "Persistent_Level:PersistentLevel.BuildableSubsystem"
+			},
+			"transform": {
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": -0.7071067690849304,
+					"w": 0.7071067690849304
+				},
+				"translation": {
+					"x": 800,
+					"y": -100,
+					"z": 100
+				},
+				"scale3d": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"components": [
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145343823.ConveyorAny1"
+				},
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145343823.ConveyorAny0"
+				}
+			]
+		},
+		{
+			"typePath": "/Game/FactoryGame/Buildable/Factory/ConveyorPole/Build_ConveyorPole.Build_ConveyorPole_C",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145343820",
+			"flags": 8,
+			"properties": {
+				"mCustomizationData": {
+					"type": "StructProperty",
+					"ueType": "StructProperty",
+					"name": "mCustomizationData",
+					"value": {
+						"type": "FactoryCustomizationData",
+						"properties": {
+							"SwatchDesc": {
+								"type": "ObjectProperty",
+								"ueType": "ObjectProperty",
+								"name": "SwatchDesc",
+								"value": {
+									"levelName": "",
+									"pathName": "/Game/FactoryGame/Buildable/-Shared/Customization/Swatches/SwatchDesc_Slot0.SwatchDesc_Slot0_C"
+								}
+							}
+						}
+					},
+					"subtype": "FactoryCustomizationData"
+				},
+				"mBuiltWithRecipe": {
+					"type": "ObjectProperty",
+					"ueType": "ObjectProperty",
+					"name": "mBuiltWithRecipe",
+					"value": {
+						"levelName": "",
+						"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorPole.Recipe_ConveyorPole_C"
+					}
+				}
+			},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "",
+			"type": "SaveEntity",
+			"needTransform": true,
+			"wasPlacedInLevel": false,
+			"parentObject": {
+				"levelName": "Persistent_Level",
+				"pathName": "Persistent_Level:PersistentLevel.BuildableSubsystem"
+			},
+			"transform": {
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0,
+					"w": 1
+				},
+				"translation": {
+					"x": 800,
+					"y": -100,
+					"z": 0
+				},
+				"scale3d": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"components": [
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145343820.SnapOnly0"
+				}
+			]
+		},
+		{
+			"typePath": "/Game/FactoryGame/Buildable/Factory/ConveyorPole/Build_ConveyorPole.Build_ConveyorPole_C",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145343817",
+			"flags": 8,
+			"properties": {
+				"mCustomizationData": {
+					"type": "StructProperty",
+					"ueType": "StructProperty",
+					"name": "mCustomizationData",
+					"value": {
+						"type": "FactoryCustomizationData",
+						"properties": {
+							"SwatchDesc": {
+								"type": "ObjectProperty",
+								"ueType": "ObjectProperty",
+								"name": "SwatchDesc",
+								"value": {
+									"levelName": "",
+									"pathName": "/Game/FactoryGame/Buildable/-Shared/Customization/Swatches/SwatchDesc_Slot0.SwatchDesc_Slot0_C"
+								}
+							}
+						}
+					},
+					"subtype": "FactoryCustomizationData"
+				},
+				"mBuiltWithRecipe": {
+					"type": "ObjectProperty",
+					"ueType": "ObjectProperty",
+					"name": "mBuiltWithRecipe",
+					"value": {
+						"levelName": "",
+						"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorPole.Recipe_ConveyorPole_C"
+					}
+				}
+			},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "",
+			"type": "SaveEntity",
+			"needTransform": true,
+			"wasPlacedInLevel": false,
+			"parentObject": {
+				"levelName": "Persistent_Level",
+				"pathName": "Persistent_Level:PersistentLevel.BuildableSubsystem"
+			},
+			"transform": {
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": -1,
+					"w": 2.220446049250313e-16
+				},
+				"translation": {
+					"x": 2.842170943040401e-14,
+					"y": -100,
+					"z": 0
+				},
+				"scale3d": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"components": [
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145343817.SnapOnly0"
+				}
+			]
+		},
+		{
+			"typePath": "/Game/FactoryGame/Buildable/Factory/ConveyorBeltMk5/Build_ConveyorBeltMk5.Build_ConveyorBeltMk5_C",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145341585",
+			"flags": 8,
+			"properties": {
+				"mSplineData": {
+					"type": "StructArrayProperty",
+					"ueType": "ArrayProperty",
+					"name": "mSplineData",
+					"structValueFields": {
+						"allStructType": "SplinePointData"
+					},
+					"subtype": "StructProperty",
+					"values": [
+						{
+							"type": "StructProperty",
+							"ueType": "StructProperty",
+							"name": "",
+							"subtype": "SplinePointData",
+							"value": {
+								"type": "SplinePointData",
+								"properties": {
+									"Location": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "Location",
+										"value": {
+											"x": 0,
+											"y": 0,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"ArriveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "ArriveTangent",
+										"value": {
+											"x": -1.2246467991473535e-16,
+											"y": -1,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"LeaveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "LeaveTangent",
+										"value": {
+											"x": -4.8985871965894135e-14,
+											"y": -400,
+											"z": 0
+										},
+										"subtype": "Vector"
+									}
+								}
+							}
+						},
+						{
+							"type": "StructProperty",
+							"ueType": "StructProperty",
+							"name": "",
+							"subtype": "SplinePointData",
+							"value": {
+								"type": "SplinePointData",
+								"properties": {
+									"Location": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "Location",
+										"value": {
+											"x": 0,
+											"y": -800,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"ArriveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "ArriveTangent",
+										"value": {
+											"x": 0,
+											"y": -400,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"LeaveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "LeaveTangent",
+										"value": {
+											"x": 0,
+											"y": -1,
+											"z": 0
+										},
+										"subtype": "Vector"
+									}
+								}
+							}
+						}
+					]
+				},
+				"mCustomizationData": {
+					"type": "StructProperty",
+					"ueType": "StructProperty",
+					"name": "mCustomizationData",
+					"value": {
+						"type": "FactoryCustomizationData",
+						"properties": {
+							"SwatchDesc": {
+								"type": "ObjectProperty",
+								"ueType": "ObjectProperty",
+								"name": "SwatchDesc",
+								"value": {
+									"levelName": "",
+									"pathName": "/Game/FactoryGame/Buildable/-Shared/Customization/Swatches/SwatchDesc_Slot0.SwatchDesc_Slot0_C"
+								}
+							}
+						}
+					},
+					"subtype": "FactoryCustomizationData"
+				},
+				"mBuiltWithRecipe": {
+					"type": "ObjectProperty",
+					"ueType": "ObjectProperty",
+					"name": "mBuiltWithRecipe",
+					"value": {
+						"levelName": "",
+						"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorBeltMk5.Recipe_ConveyorBeltMk5_C"
+					}
+				}
+			},
+			"specialProperties": {
+				"type": "ConveyorSpecialProperties"
+			},
+			"trailingData": [],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "",
+			"type": "SaveEntity",
+			"needTransform": true,
+			"wasPlacedInLevel": false,
+			"parentObject": {
+				"levelName": "Persistent_Level",
+				"pathName": "Persistent_Level:PersistentLevel.BuildableSubsystem"
+			},
+			"transform": {
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": -0.7071067690849304,
+					"w": 0.7071067690849304
+				},
+				"translation": {
+					"x": 800,
+					"y": -400,
+					"z": 100
+				},
+				"scale3d": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"components": [
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145341585.ConveyorAny1"
+				},
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145341585.ConveyorAny0"
+				}
+			]
+		},
+		{
+			"typePath": "/Game/FactoryGame/Buildable/Factory/ConveyorPole/Build_ConveyorPole.Build_ConveyorPole_C",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145341582",
+			"flags": 8,
+			"properties": {
+				"mCustomizationData": {
+					"type": "StructProperty",
+					"ueType": "StructProperty",
+					"name": "mCustomizationData",
+					"value": {
+						"type": "FactoryCustomizationData",
+						"properties": {
+							"SwatchDesc": {
+								"type": "ObjectProperty",
+								"ueType": "ObjectProperty",
+								"name": "SwatchDesc",
+								"value": {
+									"levelName": "",
+									"pathName": "/Game/FactoryGame/Buildable/-Shared/Customization/Swatches/SwatchDesc_Slot0.SwatchDesc_Slot0_C"
+								}
+							}
+						}
+					},
+					"subtype": "FactoryCustomizationData"
+				},
+				"mBuiltWithRecipe": {
+					"type": "ObjectProperty",
+					"ueType": "ObjectProperty",
+					"name": "mBuiltWithRecipe",
+					"value": {
+						"levelName": "",
+						"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorPole.Recipe_ConveyorPole_C"
+					}
+				}
+			},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "",
+			"type": "SaveEntity",
+			"needTransform": true,
+			"wasPlacedInLevel": false,
+			"parentObject": {
+				"levelName": "Persistent_Level",
+				"pathName": "Persistent_Level:PersistentLevel.BuildableSubsystem"
+			},
+			"transform": {
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0,
+					"w": 1
+				},
+				"translation": {
+					"x": 800,
+					"y": -400,
+					"z": 0
+				},
+				"scale3d": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"components": [
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145341582.SnapOnly0"
+				}
+			]
+		},
+		{
+			"typePath": "/Game/FactoryGame/Buildable/Factory/ConveyorPole/Build_ConveyorPole.Build_ConveyorPole_C",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145341579",
+			"flags": 8,
+			"properties": {
+				"mCustomizationData": {
+					"type": "StructProperty",
+					"ueType": "StructProperty",
+					"name": "mCustomizationData",
+					"value": {
+						"type": "FactoryCustomizationData",
+						"properties": {
+							"SwatchDesc": {
+								"type": "ObjectProperty",
+								"ueType": "ObjectProperty",
+								"name": "SwatchDesc",
+								"value": {
+									"levelName": "",
+									"pathName": "/Game/FactoryGame/Buildable/-Shared/Customization/Swatches/SwatchDesc_Slot0.SwatchDesc_Slot0_C"
+								}
+							}
+						}
+					},
+					"subtype": "FactoryCustomizationData"
+				},
+				"mBuiltWithRecipe": {
+					"type": "ObjectProperty",
+					"ueType": "ObjectProperty",
+					"name": "mBuiltWithRecipe",
+					"value": {
+						"levelName": "",
+						"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorPole.Recipe_ConveyorPole_C"
+					}
+				}
+			},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "",
+			"type": "SaveEntity",
+			"needTransform": true,
+			"wasPlacedInLevel": false,
+			"parentObject": {
+				"levelName": "Persistent_Level",
+				"pathName": "Persistent_Level:PersistentLevel.BuildableSubsystem"
+			},
+			"transform": {
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": -1,
+					"w": 2.220446049250313e-16
+				},
+				"translation": {
+					"x": 1.1368683772161603e-13,
+					"y": -400,
+					"z": 0
+				},
+				"scale3d": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"components": [
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145341579.SnapOnly0"
+				}
+			]
+		},
+		{
+			"typePath": "/Game/FactoryGame/Buildable/Factory/ConveyorBeltMk5/Build_ConveyorBeltMk5.Build_ConveyorBeltMk5_C",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145339264",
+			"flags": 8,
+			"properties": {
+				"mSplineData": {
+					"type": "StructArrayProperty",
+					"ueType": "ArrayProperty",
+					"name": "mSplineData",
+					"structValueFields": {
+						"allStructType": "SplinePointData"
+					},
+					"subtype": "StructProperty",
+					"values": [
+						{
+							"type": "StructProperty",
+							"ueType": "StructProperty",
+							"name": "",
+							"subtype": "SplinePointData",
+							"value": {
+								"type": "SplinePointData",
+								"properties": {
+									"Location": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "Location",
+										"value": {
+											"x": 0,
+											"y": 0,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"ArriveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "ArriveTangent",
+										"value": {
+											"x": -1.2246467991473535e-16,
+											"y": -1,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"LeaveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "LeaveTangent",
+										"value": {
+											"x": -4.8985871965894135e-14,
+											"y": -400,
+											"z": 0
+										},
+										"subtype": "Vector"
+									}
+								}
+							}
+						},
+						{
+							"type": "StructProperty",
+							"ueType": "StructProperty",
+							"name": "",
+							"subtype": "SplinePointData",
+							"value": {
+								"type": "SplinePointData",
+								"properties": {
+									"Location": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "Location",
+										"value": {
+											"x": 0,
+											"y": -800,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"ArriveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "ArriveTangent",
+										"value": {
+											"x": 0,
+											"y": -400,
+											"z": 0
+										},
+										"subtype": "Vector"
+									},
+									"LeaveTangent": {
+										"type": "StructProperty",
+										"ueType": "StructProperty",
+										"name": "LeaveTangent",
+										"value": {
+											"x": 0,
+											"y": -1,
+											"z": 0
+										},
+										"subtype": "Vector"
+									}
+								}
+							}
+						}
+					]
+				},
+				"mCustomizationData": {
+					"type": "StructProperty",
+					"ueType": "StructProperty",
+					"name": "mCustomizationData",
+					"value": {
+						"type": "FactoryCustomizationData",
+						"properties": {
+							"SwatchDesc": {
+								"type": "ObjectProperty",
+								"ueType": "ObjectProperty",
+								"name": "SwatchDesc",
+								"value": {
+									"levelName": "",
+									"pathName": "/Game/FactoryGame/Buildable/-Shared/Customization/Swatches/SwatchDesc_Slot0.SwatchDesc_Slot0_C"
+								}
+							}
+						}
+					},
+					"subtype": "FactoryCustomizationData"
+				},
+				"mBuiltWithRecipe": {
+					"type": "ObjectProperty",
+					"ueType": "ObjectProperty",
+					"name": "mBuiltWithRecipe",
+					"value": {
+						"levelName": "",
+						"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorBeltMk5.Recipe_ConveyorBeltMk5_C"
+					}
+				}
+			},
+			"specialProperties": {
+				"type": "ConveyorSpecialProperties"
+			},
+			"trailingData": [],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "",
+			"type": "SaveEntity",
+			"needTransform": true,
+			"wasPlacedInLevel": false,
+			"parentObject": {
+				"levelName": "Persistent_Level",
+				"pathName": "Persistent_Level:PersistentLevel.BuildableSubsystem"
+			},
+			"transform": {
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": -0.7071067690849304,
+					"w": 0.7071067690849304
+				},
+				"translation": {
+					"x": 800,
+					"y": -800,
+					"z": 100
+				},
+				"scale3d": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"components": [
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145339264.ConveyorAny1"
+				},
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145339264.ConveyorAny0"
+				}
+			]
+		},
+		{
+			"typePath": "/Game/FactoryGame/Buildable/Factory/ConveyorPole/Build_ConveyorPole.Build_ConveyorPole_C",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145339261",
+			"flags": 8,
+			"properties": {
+				"mCustomizationData": {
+					"type": "StructProperty",
+					"ueType": "StructProperty",
+					"name": "mCustomizationData",
+					"value": {
+						"type": "FactoryCustomizationData",
+						"properties": {
+							"SwatchDesc": {
+								"type": "ObjectProperty",
+								"ueType": "ObjectProperty",
+								"name": "SwatchDesc",
+								"value": {
+									"levelName": "",
+									"pathName": "/Game/FactoryGame/Buildable/-Shared/Customization/Swatches/SwatchDesc_Slot0.SwatchDesc_Slot0_C"
+								}
+							}
+						}
+					},
+					"subtype": "FactoryCustomizationData"
+				},
+				"mBuiltWithRecipe": {
+					"type": "ObjectProperty",
+					"ueType": "ObjectProperty",
+					"name": "mBuiltWithRecipe",
+					"value": {
+						"levelName": "",
+						"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorPole.Recipe_ConveyorPole_C"
+					}
+				}
+			},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "",
+			"type": "SaveEntity",
+			"needTransform": true,
+			"wasPlacedInLevel": false,
+			"parentObject": {
+				"levelName": "Persistent_Level",
+				"pathName": "Persistent_Level:PersistentLevel.BuildableSubsystem"
+			},
+			"transform": {
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0,
+					"w": 1
+				},
+				"translation": {
+					"x": 800,
+					"y": -800,
+					"z": 0
+				},
+				"scale3d": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"components": [
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145339261.SnapOnly0"
+				}
+			]
+		},
+		{
+			"typePath": "/Game/FactoryGame/Buildable/Factory/ConveyorPole/Build_ConveyorPole.Build_ConveyorPole_C",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145339258",
+			"flags": 8,
+			"properties": {
+				"mCustomizationData": {
+					"type": "StructProperty",
+					"ueType": "StructProperty",
+					"name": "mCustomizationData",
+					"value": {
+						"type": "FactoryCustomizationData",
+						"properties": {
+							"SwatchDesc": {
+								"type": "ObjectProperty",
+								"ueType": "ObjectProperty",
+								"name": "SwatchDesc",
+								"value": {
+									"levelName": "",
+									"pathName": "/Game/FactoryGame/Buildable/-Shared/Customization/Swatches/SwatchDesc_Slot0.SwatchDesc_Slot0_C"
+								}
+							}
+						}
+					},
+					"subtype": "FactoryCustomizationData"
+				},
+				"mBuiltWithRecipe": {
+					"type": "ObjectProperty",
+					"ueType": "ObjectProperty",
+					"name": "mBuiltWithRecipe",
+					"value": {
+						"levelName": "",
+						"pathName": "/Game/FactoryGame/Recipes/Buildings/Recipe_ConveyorPole.Recipe_ConveyorPole_C"
+					}
+				}
+			},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "",
+			"type": "SaveEntity",
+			"needTransform": true,
+			"wasPlacedInLevel": false,
+			"parentObject": {
+				"levelName": "Persistent_Level",
+				"pathName": "Persistent_Level:PersistentLevel.BuildableSubsystem"
+			},
+			"transform": {
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": -1,
+					"w": 2.220446049250313e-16
+				},
+				"translation": {
+					"x": 2.2737367544323206e-13,
+					"y": -800,
+					"z": 0
+				},
+				"scale3d": {
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"components": [
+				{
+					"levelName": "Persistent_Level",
+					"pathName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145339258.SnapOnly0"
+				}
+			]
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145347889.ConveyorAny0",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145347889",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145347889.ConveyorAny1",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145347889",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145347886.SnapOnly0",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145347886",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145347883.SnapOnly0",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145347883",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145345741.ConveyorAny0",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145345741",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145345741.ConveyorAny1",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145345741",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145345738.SnapOnly0",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145345738",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145345735.SnapOnly0",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145345735",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145343823.ConveyorAny0",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145343823",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145343823.ConveyorAny1",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145343823",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145343820.SnapOnly0",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145343820",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145343817.SnapOnly0",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145343817",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145341585.ConveyorAny0",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145341585",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145341585.ConveyorAny1",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145341585",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145341582.SnapOnly0",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145341582",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145341579.SnapOnly0",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145341579",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145339264.ConveyorAny0",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145339264",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145339264.ConveyorAny1",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorBeltMk5_C_2145339264",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145339261.SnapOnly0",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145339261",
+			"type": "SaveComponent"
+		},
+		{
+			"typePath": "/Script/FactoryGame.FGFactoryConnectionComponent",
+			"rootObject": "Persistent_Level",
+			"instanceName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145339258.SnapOnly0",
+			"flags": 262152,
+			"properties": {},
+			"specialProperties": {
+				"type": "EmptySpecialProperties"
+			},
+			"trailingData": [
+				0,
+				0,
+				0,
+				0
+			],
+			"saveCustomVersion": 0,
+			"shouldMigrateObjectRefsToPersistent": false,
+			"parentEntityName": "Persistent_Level:PersistentLevel.Build_ConveyorPole_C_2145339258",
+			"type": "SaveComponent"
+		}
+	]
+}
