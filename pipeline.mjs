@@ -3,16 +3,15 @@ import * as path from 'path';
 import { Parser } from "@etothepii/satisfactory-file-parser";
 
 // Configuration
-const SRC_DIR = './source';    // Put your cow.sbp, fox.sbp here
-const DECODE_DIR = './decode'; // JSON files will go here
-const OUTPUT_DIR = './output'; // Final .sbp files will go here
+const SRC_DIR = './source';
+const DECODE_DIR = './decode';
+const OUTPUT_DIR = './output';
 
 // Ensure directories exist
 [SRC_DIR, DECODE_DIR, OUTPUT_DIR].forEach(dir => {
 	if (!fs.existsSync(dir)) fs.mkdirSync(dir);
 });
 
-// The 6 Tiers of Satisfactory Belts
 const BELT_TIERS = [
 	{ tier: 1, class: "ConveyorBeltMk1", recipe: "Recipe_ConveyorBeltMk1" },
 	{ tier: 2, class: "ConveyorBeltMk2", recipe: "Recipe_ConveyorBeltMk2" },
@@ -25,6 +24,11 @@ const BELT_TIERS = [
 async function runPipeline() {
 	const files = fs.readdirSync(SRC_DIR).filter(f => f.endsWith('.sbp'));
 
+	if (files.length === 0) {
+		console.log("No .sbp files found in /source. Add some blueprints to begin!");
+		return;
+	}
+
 	for (const sbpFile of files) {
 		const baseName = path.basename(sbpFile, '.sbp');
 		const cfgFile = `${baseName}.sbpcfg`;
@@ -36,7 +40,6 @@ async function runPipeline() {
 
 		console.log(`📦 Processing: ${baseName}...`);
 
-		// STEP 2: Decode
 		const sbpBuf = fs.readFileSync(path.join(SRC_DIR, sbpFile));
 		const cfgBuf = fs.readFileSync(path.join(SRC_DIR, cfgFile));
 
@@ -46,55 +49,72 @@ async function runPipeline() {
 			cfgBuf.buffer.slice(cfgBuf.byteOffset, cfgBuf.byteOffset + cfgBuf.byteLength)
 		);
 
-		// Save original JSON to decode folder
+		// Save original decode
 		fs.writeFileSync(path.join(DECODE_DIR, `${baseName}.json`), JSON.stringify(blueprint, null, 2));
 
-		// STEP 3 & 4: Create 6 Tiered Variations
 		for (const target of BELT_TIERS) {
-			// Deep copy the blueprint object
 			const modifiedBP = JSON.parse(JSON.stringify(blueprint));
 			const newName = `${baseName}_Mk${target.tier}`;
 			modifiedBP.name = newName;
 
-			// Loop through all entities and replace belt classes
+			// Updated logic to catch both Belts and Lifts (Elevators)
 			modifiedBP.objects.forEach(obj => {
-				// Regex to find any ConveyorBeltMkX and replace with target
 				if (obj.typePath && obj.typePath.includes("ConveyorBelt")) {
 					obj.typePath = obj.typePath.replace(/ConveyorBeltMk\d/g, target.class);
 				}
-				// Also update parent names/references if they exist
-				if (obj.parentEntityName && obj.parentEntityName.includes("ConveyorBelt")) {
+				if (obj.typePath && obj.typePath.includes("ConveyorLift")) {
+					const liftClass = target.class.replace("Belt", "Lift");
+					obj.typePath = obj.typePath.replace(/ConveyorLiftMk\d/g, liftClass);
+				}
+
+				// Update Parent references (crucial for connections)
+				if (obj.parentEntityName) {
 					obj.parentEntityName = obj.parentEntityName.replace(/ConveyorBeltMk\d/g, target.class);
+					const liftClass = target.class.replace("Belt", "Lift");
+					obj.parentEntityName = obj.parentEntityName.replace(/ConveyorLiftMk\d/g, liftClass);
 				}
 			});
 
-			// Update Recipes in the header so the game knows the cost
+			// Unified Recipe Updates
 			if (modifiedBP.header && modifiedBP.header.recipeReferences) {
 				modifiedBP.header.recipeReferences.forEach(recipe => {
 					recipe.pathName = recipe.pathName.replace(/Recipe_ConveyorBeltMk\d/g, target.recipe);
+					const liftRecipe = target.recipe.replace("Belt", "Lift");
+					recipe.pathName = recipe.pathName.replace(/Recipe_ConveyorLiftMk\d/g, liftRecipe);
 				});
 			}
 
-			// Save the modified JSON
+			// Save modified JSON
 			fs.writeFileSync(path.join(DECODE_DIR, `${newName}.json`), JSON.stringify(modifiedBP, null, 2));
 
-			// STEP 5: Encode back to .sbp
+			// Encode logic
 			let mainFileHeader;
 			const mainFileBodyChunks = [];
 
-			const summary = Parser.WriteBlueprintFiles(
-				modifiedBP,
-				(h) => mainFileHeader = h,
-				(c) => mainFileBodyChunks.push(c)
-			);
+			try {
+				const summary = Parser.WriteBlueprintFiles(
+					modifiedBP,
+					(h) => mainFileHeader = h,
+					(c) => mainFileBodyChunks.push(c)
+				);
 
-			const finalSbp = Buffer.concat([Buffer.from(mainFileHeader), ...mainFileBodyChunks.map(c => Buffer.from(c))]);
+				if (!mainFileHeader || !summary.configFileBinary) {
+					throw new Error("Encoding failed - check JSON structure.");
+				}
 
-			fs.writeFileSync(path.join(OUTPUT_DIR, `${newName}.sbp`), finalSbp);
-			fs.writeFileSync(path.join(OUTPUT_DIR, `${newName}.sbpcfg`), Buffer.from(summary.configFileBinary));
+				const finalSbp = Buffer.concat([
+					Buffer.from(mainFileHeader),
+					...mainFileBodyChunks.map(c => Buffer.from(c))
+				]);
+
+				fs.writeFileSync(path.join(OUTPUT_DIR, `${newName}.sbp`), finalSbp);
+				fs.writeFileSync(path.join(OUTPUT_DIR, `${newName}.sbpcfg`), Buffer.from(summary.configFileBinary));
+			} catch (encErr) {
+				console.error(`❌ Error encoding ${newName}:`, encErr.message);
+			}
 		}
 
-		console.log(`✅ Finished 6 variations for ${baseName}`);
+		console.log(`✅ Generated 6 variations for ${baseName}`);
 	}
 }
 
