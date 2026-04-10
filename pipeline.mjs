@@ -54,7 +54,7 @@ async function runPipeline() {
 
 		for (const target of BELT_TIERS) {
 			const modifiedBP = JSON.parse(JSON.stringify(blueprint));
-			const newName = `${baseName}_Mk${target.tier}`;
+			const newName = `${baseName}_T${target.tier}`;
 			modifiedBP.name = newName;
 
 			// Updated logic to catch both Belts and Lifts (Elevators)

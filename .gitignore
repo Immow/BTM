@@ -1,0 +1,17 @@
+# Dependency folders
+node_modules/
+
+# Local data folders (The pipeline creates these)
+source/
+decode/
+output/
+dist/
+
+# Individual blueprint files in root
+*.sbp
+*.sbpcfg
+*.json
+
+# OS specific files
+.DS_Store
+Thumbs.db
